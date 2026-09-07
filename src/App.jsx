@@ -5,7 +5,7 @@ function Nailong() {
   return (
     <div className="nailong-wrapper">
       <video
-        src="/nailong.mp4"
+        src={`${import.meta.env.BASE_URL}nailong.mp4`}
         autoPlay
         muted
         loop
@@ -83,12 +83,12 @@ function App() {
           MUSIC
       ========================== */}
 
-      <audio
-        ref={musicRef}
-        src="/music.mp3"
-        loop
-        preload="auto"
-      />
+    <audio
+  ref={musicRef}
+  src={`${import.meta.env.BASE_URL}music.mp3`}
+  loop
+  preload="auto"
+/>
 
 
       {/* ==========================
@@ -204,10 +204,10 @@ function App() {
 
               <div className="photo-card">
 
-                <img
-                  src="/doi.jpg"
-                  alt="Foto doi"
-                />
+              <img
+  src={`${import.meta.env.BASE_URL}doi.jpg`}
+  alt="Foto doi"
+/>
 
                 <div className="photo-caption">
                   ♡ my favorite person ♡
